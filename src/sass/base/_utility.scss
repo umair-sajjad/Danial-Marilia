@@ -1,0 +1,14 @@
+@use "../abstracts/mixins" as *;
+
+.drop_cap {
+  font-size: 4.16rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  color: rgb(51, 51, 51);
+
+  @include responsive(screen-2xl) {
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+  }
+}

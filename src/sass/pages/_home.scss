@@ -1,0 +1,450 @@
+@use "../abstracts/mixins" as *;
+
+.home__hero {
+  width: 100%;
+  min-height: 65vh;
+  background-image: url(../../assets/images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--neutral-gray_50);
+  display: flex;
+  align-items: center;
+  margin-bottom: 6.4rem;
+
+  @include responsive(screen-2xl) {
+    height: 110svh;
+  }
+
+  @include responsive(screen-mobile-lg) {
+    background-position: 80%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    &__heading {
+      font-size: var(--home-hero-heading-font-size-2xl);
+      text-transform: uppercase;
+      line-height: 1;
+      margin: 13.3rem 0 4rem 1.6rem;
+
+      @include responsive(screen-2xl) {
+        font-size: var(--home-hero-heading-font-size-xl);
+      }
+
+      @include responsive(screen-lg) {
+        font-size: var(--home-hero-heading-font-size-lg);
+        margin-top: 9.5rem;
+      }
+
+      @include responsive(screen-md) {
+        font-size: var(--home-hero-heading-font-size-md);
+      }
+
+      @include responsive(screen-mobile-lg) {
+        font-size: var(--home-hero-heading-font-size-mobile);
+        margin-bottom: 25rem;
+      }
+
+      &--1 {
+        font-weight: 400;
+        margin-left: 13rem;
+
+        @include responsive(screen-2xl) {
+          margin-left: 9.6rem;
+        }
+
+        @include responsive(screen-lg) {
+          margin-left: 7.5rem;
+        }
+
+        @include responsive(screen-mobile-lg) {
+          margin-left: 4.5rem;
+        }
+      }
+
+      &--2 {
+        font-weight: 400;
+      }
+
+      &--3 {
+        font-weight: 400;
+        margin-left: 13rem;
+
+        @include responsive(screen-2xl) {
+          margin-left: 9.6rem;
+        }
+
+        @include responsive(screen-lg) {
+          margin-left: 7.5rem;
+        }
+
+        @include responsive(screen-mobile-lg) {
+          margin-left: 4.5rem;
+        }
+      }
+    }
+
+    &__btn {
+      position: relative;
+      margin-left: 11.2rem;
+      margin-bottom: 6rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        .home__hero__content__btn__link__circle__wrapper {
+          transform: scale(1.1);
+        }
+      }
+
+      @include responsive(screen-mobile-lg) {
+        margin-left: 20rem;
+      }
+
+      &__link {
+        &--arrow {
+          transition: all 0.3s ease;
+          position: absolute;
+          max-width: 31%;
+          inset: 33% 0 0 33%;
+          z-index: 2;
+        }
+
+        &__circle__wrapper {
+          transform: scale(1);
+          transition: all 0.3s ease;
+
+          &--circle {
+            width: 24rem;
+            animation: spin 12s linear infinite;
+            transition: all 0.3s ease;
+
+            @include responsive(screen-mobile-lg) {
+              width: 30rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.featured {
+  &__heading {
+    text-transform: uppercase;
+    padding: 3.2rem;
+    font-size: 2.9rem;
+    font-weight: 700;
+    text-align: center;
+
+    @include responsive(screen-2xl) {
+      font-size: 1.9rem;
+    }
+  }
+
+  &__brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6.4rem 17.6rem;
+
+    @include responsive(screen-lg) {
+      padding: 7.1rem;
+    }
+
+    @include responsive(screen-mobile-lg) {
+      padding: 2.6rem;
+      gap: 4.3rem;
+      flex-flow: wrap;
+      place-content: stretch center;
+      margin-bottom: 4rem;
+    }
+
+    &__logo:nth-child(1) {
+      width: 10svw;
+
+      @include responsive(screen-mobile-lg) {
+        width: 24%;
+      }
+    }
+
+    &__logo:nth-child(2) {
+      width: 7svw;
+
+      @include responsive(screen-mobile-lg) {
+        width: 16%;
+      }
+    }
+
+    &__logo:nth-child(3) {
+      width: 10svw;
+
+      @include responsive(screen-mobile-lg) {
+        width: 23%;
+      }
+    }
+
+    &__logo:nth-child(4) {
+      width: 14svw;
+
+      @include responsive(screen-mobile-lg) {
+        width: 33%;
+      }
+    }
+
+    &__logo:nth-child(5) {
+      width: 10svw;
+
+      @include responsive(screen-mobile-lg) {
+        width: 24%;
+      }
+    }
+  }
+
+  &__parallax {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 128px;
+    gap: 64px;
+    overflow: hidden;
+
+    @include responsive(screen-md) {
+      padding-top: 96px;
+    }
+
+    @include responsive(screen-mobile-lg) {
+      gap: 2.6rem;
+    }
+
+    &__img:first-child {
+      width: 20%;
+      will-change: transform;
+
+      @include responsive(screen-mobile-lg) {
+        width: 28%;
+      }
+    }
+
+    &__img:last-child {
+      width: 20%;
+      min-width: 30%;
+      will-change: transform;
+
+      @include responsive(screen-mobile-lg) {
+        width: 42%;
+      }
+    }
+  }
+
+  &__para {
+    width: 50%;
+    margin: 0 auto 9.6rem auto;
+    font-size: 2.56rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.032rem;
+
+    @include responsive(screen-2xl) {
+      font-size: 1.9rem;
+    }
+
+    @include responsive(screen-lg) {
+      font-weight: 400;
+      line-height: 2.4rem;
+      width: 55%;
+    }
+
+    @include responsive(screen-md) {
+      font-size: 2rem;
+      line-height: 2.8rem;
+    }
+
+    @include responsive(screen-mobile-lg) {
+      width: 100%;
+      padding-left: 2.6rem;
+      padding-right: 2.6rem;
+      font-size: 2.667rem;
+      line-height: 3.6rem;
+    }
+  }
+}
+
+.video__wrapper {
+  overflow: hidden;
+  height: 100svh;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    position: relative;
+    top: 0;
+    column-gap: 6.4rem;
+    will-change: transform;
+
+    @include responsive(screen-md) {
+      column-gap: 0.667rem;
+    }
+
+    &--c1 {
+      @include video-col();
+    }
+
+    &--c2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 70%;
+      position: relative;
+      overflow: hidden;
+
+      @include responsive(screen-mobile-lg) {
+        height: 48rem;
+        width: 120%;
+      }
+
+      &__video {
+        object-fit: cover;
+        z-index: -100;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+    }
+
+    &--c3 {
+      @include video-col();
+    }
+  }
+}
+
+.editorial {
+  width: 100%;
+  position: relative;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding-top: 9.6rem;
+    overflow: hidden;
+    color: var(--neutral-gray_50);
+    position: relative;
+    z-index: 5;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 12.8rem;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  &__parallax {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__row--1 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 9.6rem;
+      width: 82%;
+
+      &--1 {
+        width: 50%;
+        min-width: 50%;
+        aspect-ratio: 2/3;
+        object-fit: cover;
+      }
+    }
+
+    &__row--2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 9.6rem;
+      width: 82%;
+
+      &--1 {
+        aspect-ratio: 2/3;
+        object-fit: cover;
+        width: 37%;
+        min-width: 37%;
+      }
+
+      &--2 {
+        aspect-ratio: 2/3;
+        object-fit: cover;
+        width: 37%;
+        min-width: 37%;
+      }
+    }
+
+    &__row--3 {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 9.6rem;
+      width: 82%;
+
+      &--1 {
+        width: 50%;
+        min-width: 50%;
+        aspect-ratio: 2/3;
+        object-fit: cover;
+      }
+
+      &--2 {
+        width: 25%;
+        min-width: 25%;
+        aspect-ratio: 2/3;
+        object-fit: cover;
+      }
+    }
+
+    &__row--4 {
+      padding: 0 1.6rem;
+      width: 100%;
+      position: relative;
+      z-index: 100;
+      mix-blend-mode: difference;
+
+      span {
+        position: relative;
+        z-index: 200;
+        color: var(--white);
+        font-size: 10vw;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+
+    &__row--5 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 9.6rem;
+      width: 82%;
+
+      &--1 {
+        aspect-ratio: 2/3;
+        object-fit: cover;
+        width: 37%;
+        min-width: 37%;
+      }
+
+      &--2 {
+        aspect-ratio: 2/3;
+        object-fit: cover;
+        width: 37%;
+        min-width: 37%;
+      }
+    }
+  }
+}

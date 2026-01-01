@@ -1,0 +1,42 @@
+@use "../abstracts/mixins" as *;
+
+.cookie {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  padding: 32px 32px 16px 32px;
+  width: 30svw;
+  background-color: var(--CTA-bg);
+  font-size: 14px;
+
+  @include responsive(screen-lg) {
+    width: 55svw;
+  }
+
+  @include responsive(screen-md) {
+    width: 70svw;
+  }
+
+  @include responsive(screen-mobile-lg) {
+    width: auto;
+    left: 16px;
+  }
+
+  .cookie__para {
+    line-height: 17px;
+  }
+
+  .cookie__btn {
+    margin-top: 16px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+
+    &:last-child {
+      margin-left: 32px;
+    }
+
+    &:hover {
+      color: var(--neutral-gray_70);
+    }
+  }
+}

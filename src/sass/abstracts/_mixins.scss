@@ -1,0 +1,76 @@
+@mixin responsive($breakpoint) {
+  @if $breakpoint == screen-2xl {
+    @media only screen and (max-width: 120em) {
+      // 1920px
+      @content;
+    }
+  }
+  @if $breakpoint == screen-lg {
+    @media only screen and (max-width: 61.875em) {
+      // 990px
+      @content;
+    }
+  }
+  @if $breakpoint == screen-md {
+    @media only screen and (max-width: 48em) {
+      // 768px
+      @content;
+    }
+  }
+  @if $breakpoint == screen-mobile-lg {
+    @media only screen and (max-width: 30em) {
+      // 480px
+      @content;
+    }
+  }
+}
+
+@mixin video-col() {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6.4rem;
+  will-change: transform;
+
+  @include responsive(screen-md) {
+    gap: 0.667rem;
+  }
+
+  @include responsive(screen-mobile-lg) {
+    width: 80%;
+  }
+
+  &--img {
+    position: relative;
+    width: 100%;
+    min-width: 30%;
+
+    &:first-child {
+      display: none;
+    }
+
+    @include responsive(screen-md) {
+      &:first-child {
+        display: block;
+        height: 100%;
+        min-height: 0;
+        flex: 1;
+      }
+    }
+
+    img {
+      @include responsive(screen-md) {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
