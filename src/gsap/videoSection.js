@@ -3,7 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const initFeaturedParallax = () => {
+const initVideoParallax = () => {
   const wrapper = document.querySelector(".video__wrapper");
   const container = document.querySelector(".video__wrapper__container");
   const col1 = document.querySelector(".video__wrapper__container--c1");
@@ -31,4 +31,4 @@ const initFeaturedParallax = () => {
   tl.to(container, { scale: 2.4, ease: "none" }, 0.125);
 };
 
-window.addEventListener("DOMContentLoaded", initFeaturedParallax);
+window.addEventListener("DOMContentLoaded", initVideoParallax);
