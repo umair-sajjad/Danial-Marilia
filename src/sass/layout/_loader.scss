@@ -1,0 +1,27 @@
+@use "../abstracts/mixins" as *;
+
+.loader {
+  height: 100vh;
+  width: 100%;
+  background: var(--primary-white);
+  @include flex-center;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+    gap: 64px;
+    text-align: center;
+    opacity: 0;
+    transition: none !important;
+
+    img {
+      width: 60svw;
+    }
+  }
+}

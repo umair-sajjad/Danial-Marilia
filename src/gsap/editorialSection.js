@@ -50,7 +50,7 @@ const initEditorialParallax = () => {
       x: -400,
       ease: "none",
     },
-    0
+    0,
   );
 
   tl.to(
@@ -59,7 +59,7 @@ const initEditorialParallax = () => {
       x: -350,
       ease: "none",
     },
-    0.125
+    0.125,
   );
 
   mm.add("(min-width: 980px)", () => {

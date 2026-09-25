@@ -55,6 +55,30 @@
   }
 }
 
+.heading-left {
+  width: 100%;
+
+  h1 {
+    text-transform: uppercase;
+    width: 40%;
+    font-size: 4vw;
+
+    @include responsive(screen-lg) {
+      font-size: 5rem;
+    }
+
+    @include responsive(screen-md) {
+      font-size: 5.625rem;
+      width: 50%;
+    }
+
+    @include responsive(screen-mobile-lg) {
+      font-size: 4.333rem;
+      width: 70%;
+    }
+  }
+}
+
 .heading-large {
   font-size: 14.4rem;
   text-transform: uppercase;

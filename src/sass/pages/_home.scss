@@ -659,7 +659,7 @@
 }
 
 .stories {
-  padding: 6.4rem 0;
+  padding-top: 6.4rem;
   max-width: 80%;
   margin: 0 auto;
 
@@ -784,6 +784,270 @@
 
     @include responsive(screen-mobile-lg) {
       padding: 6.667rem 0;
+    }
+  }
+}
+
+.stories__slider {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 6.4rem;
+
+  &__wrapper {
+    display: flex;
+    gap: 8px;
+    max-width: max-content;
+    will-change: transform;
+
+    &__img {
+      width: 30%;
+      min-width: 30%;
+      object-fit: cover;
+    }
+  }
+}
+
+.portfolio {
+  &__link {
+    margin-bottom: 14rem;
+  }
+
+  &__content {
+    width: 100%;
+    height: 100svh;
+    padding: 0 16px;
+    @include flex-center();
+    gap: 9.6rem;
+
+    @include responsive(screen-lg) {
+      gap: 32px;
+    }
+
+    @include responsive(screen-mobile-lg) {
+      height: auto;
+      gap: 0;
+      padding: 0 8px;
+    }
+
+    &__img {
+      overflow: hidden;
+      width: 32vw;
+
+      @include responsive(screen-mobile-lg) {
+        display: none;
+      }
+
+      img {
+        width: auto;
+        height: 76svh;
+        object-fit: cover;
+      }
+    }
+
+    &__nav {
+      height: 70svh;
+      align-self: center;
+      @include flex-center();
+      flex-direction: column;
+      overflow: visible;
+
+      @include responsive(screen-mobile-lg) {
+        height: auto;
+      }
+
+      &__link {
+        display: block;
+        border-top: 1px solid var(--neutral-gray_50);
+        width: 100%;
+
+        &:last-child {
+          border-bottom: 1px solid var(--neutral-gray_50);
+        }
+
+        @include responsive(screen-mobile-lg) {
+          padding: 32px 0;
+          overflow: hidden;
+        }
+
+        &__content {
+          height: 15svh;
+          width: 100%;
+          padding: 3.2rem 1.6rem;
+          display: flex;
+          align-items: center;
+          gap: 48px;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            transform: translateX(5%);
+          }
+
+          @include responsive(screen-lg) {
+            padding: 0 1.6rem;
+            height: 8svh;
+          }
+
+          @include responsive(screen-mobile-lg) {
+            gap: 24px;
+            height: auto;
+            flex-direction: column;
+            padding: 0;
+            text-align: center;
+
+            &:hover {
+              transform: translateX(3%);
+            }
+          }
+
+          &__index {
+            align-self: flex-start;
+            padding-top: 30px;
+            font-size: 3.2rem;
+            font-weight: 700;
+
+            @include responsive(screen-2xl) {
+              padding-top: 0;
+              margin-top: -10px;
+            }
+
+            @include responsive(screen-lg) {
+              font-size: 16px;
+              margin-top: 10px;
+            }
+
+            @include responsive(screen-mobile-lg) {
+              font-size: 19px;
+              line-height: 23px;
+              width: 100%;
+              margin-top: 0;
+            }
+          }
+
+          &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-weight: 700;
+
+            h2 {
+              text-transform: uppercase;
+              font-size: 3.2rem;
+              line-height: 1;
+              white-space: nowrap;
+              font-weight: 700;
+
+              @include responsive(screen-lg) {
+                font-size: 16px;
+              }
+
+              @include responsive(screen-mobile-lg) {
+                font-size: 19px;
+                line-height: 23px;
+              }
+            }
+
+            span {
+              font-size: 2.4rem;
+              letter-spacing: 3.2px;
+              color: var(--neutral-gray_70);
+              text-transform: uppercase;
+
+              @include responsive(screen-lg) {
+                font-size: 13px;
+              }
+            }
+          }
+
+          img {
+            display: none;
+
+            @include responsive(screen-mobile-lg) {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.passport {
+  padding: 12.8rem 0;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    padding: 0 16px;
+
+    @include responsive(screen-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(screen-mobile-lg) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 32px;
+      padding: 0 8px;
+    }
+
+    &__month {
+      text-transform: uppercase;
+
+      @include responsive(screen-mobile-lg) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+        align-items: center;
+      }
+
+      &__heading {
+        font-size: 32px;
+
+        @include responsive(screen-mobile-lg) {
+          grid-column: 1/-1;
+          font-size: 3.167rem;
+        }
+      }
+
+      &__img {
+        max-width: 100%;
+        overflow: hidden;
+
+        img {
+          aspect-ratio: 3/4;
+          object-fit: cover;
+          transform: scale(1.05);
+        }
+      }
+
+      &__subheadings {
+        margin-top: 20px;
+
+        @include responsive(screen-mobile-lg) {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        h3 {
+          font-size: 3.2rem;
+          text-transform: capitalize;
+          white-space: nowrap;
+
+          @include responsive(screen-lg) {
+            font-size: 2.333rem;
+          }
+
+          @include responsive(screen-md) {
+            font-size: 2.625rem;
+            line-height: 2.625rem;
+          }
+          @include responsive(screen-mobile-lg) {
+            font-size: 3.167rem;
+            line-height: 3.833rem;
+          }
+        }
+      }
     }
   }
 }

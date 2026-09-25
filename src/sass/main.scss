@@ -7,11 +7,15 @@
 @use "base/utility";
 
 @use "layout/header";
+@use "layout/footer";
+@use "layout/loader";
 
 @use "components/cookie";
 @use "components/bookCTA";
 @use "components/section";
 @use "components/discoverBtn";
 @use "components/circleBtn";
+@use "components/invest";
+@use "components/instaSection";
 
 @use "pages/home";

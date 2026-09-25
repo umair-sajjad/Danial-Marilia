@@ -8,6 +8,17 @@
   box-sizing: border-box;
 }
 
+body,
+html {
+  &.is-loading {
+    overflow: hidden !important;
+    height: 100vh !important;
+    height: 100svh !important;
+
+    touch-action: none;
+  }
+}
+
 html {
   font-size: 62.5%; //1rem = 10px  (10/16 = 62.5%)
 
@@ -64,4 +75,18 @@ body {
   background-color: var(--primary-white);
   color: var(--secondary-black);
   line-height: 1;
+}
+
+input {
+  font-family: var(--font-primary);
+}
+
+input::placeholder,
+input::-ms-input-placeholder,
+input::-moz-placeholder {
+  font-family: var(--font-primary);
+  opacity: 1;
+}
+
+#master-wrap {
 }

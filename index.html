@@ -9,6 +9,17 @@
 </head>
 
 <body>
+
+  <!-- loader -->
+  <div class="loader" id="loader">
+    <div class="loader__content">
+      <img src="./src/assets/images/loader_logo.svg" alt="logo" class="loader__content__img">
+      <div class="loader__content__counter">
+        <span class="loader__content__counter__num"></span>
+        <span>%</span>
+      </div>
+    </div>
+  </div>
   <!-- header -->
   <header class="header">
     <div class="header__logo">
@@ -128,7 +139,6 @@
   </section>
 
   <!-- editorial section -->
-
   <section class="editorial">
     <div class="editorial__text">
       <span class="editorial__text--1">AUTHENTIC, EVOCATIVE IMAGES AUTHENTIC, EVOCATIVE IMAGES</span>
@@ -166,9 +176,9 @@
 
   <!-- Discover Section -->
   <section class="section">
-    <div class="section__top">
-      <div class="section__top__heading">
-        <h1 class="section__top__heading__text">DISCOVER OUR WORK</h1>
+    <div class="section__top section_large_padding">
+      <div class="heading-left">
+        <h1>DISCOVER OUR WORK</h1>
       </div>
 
       <p class="section__top__para">
@@ -220,7 +230,8 @@
                 <h1 class="discover__card__right__content__heading__text">Timeless Romance at Villa Erba</h1>
               </div>
               <div class="discover__card__right__content__body">
-                <p class="discover__card__right__content__body__para">An elegant love story that unfolded at Lake Como’s
+                <p class="discover__card__right__content__body__para">An elegant love story that unfolded at Lake
+                  Como’s
                   most sought-after setting, Villa Erba</p>
                 <div class="discover__card__right__content__body__btn">
                   <a href="#" class="discover__btn">Discover <img src="./src/assets/images/discover-arrow.svg"
@@ -291,8 +302,416 @@
         <span class="circle-btn__text">Book Now <img src="./src/assets/images/arrow_black_thick.png" alt="arrow"></span>
       </a>
     </div>
-
   </section>
+  <!-- story slider -->
+  <div class="stories__slider">
+    <div class="stories__slider__wrapper">
+      <img src="./src/assets/images/video_img_6.jpg" class="stories__slider__wrapper__img" alt="slider image 1">
+      <img src="./src/assets/images/story_slider_2.jpg" class="stories__slider__wrapper__img" alt="slider image 2">
+      <img src="./src/assets/images/story_slider_3.jpg" class="stories__slider__wrapper__img" alt="slider image 3">
+      <img src="./src/assets/images/story_slider_4.jpg" class="stories__slider__wrapper__img" alt="slider image 4">
+      <img src="./src/assets/images/story_slider_5.jpg" class="stories__slider__wrapper__img" alt="slider image 5">
+      <img src="./src/assets/images/story_slider_6.jpg" class="stories__slider__wrapper__img" alt="slider image 6">
+      <img src="./src/assets/images/story_slider_7.jpg" class="stories__slider__wrapper__img" alt="slider image 7">
+      <img src="./src/assets/images/story_slider_8.jpg" class="stories__slider__wrapper__img" alt="slider image 8">
+      <img src="./src/assets/images/story_slider_9.jpg" class="stories__slider__wrapper__img" alt="slider image 9">
+      <img src="./src/assets/images/weddingCard_1.jpg" class="stories__slider__wrapper__img" alt="slider image 10">
+      <img src="./src/assets/images/story_slider_11.jpg" class="stories__slider__wrapper__img" alt="slider image 11">
+      <img src="./src/assets/images/story_slider_12.jpg" class="stories__slider__wrapper__img" alt="slider image 12">
+      <img src="./src/assets/images/story_slider_13.jpg" class="stories__slider__wrapper__img" alt="slider image 13">
+    </div>
+  </div>
+
+  <!-- Our portfolio section -->
+  <section class="section portfolio">
+    <a href="#" class="heading-arrow portfolio__link">
+      <h1 class="heading-arrow__text">Our Portfolio<img src="./src/assets/images/arrow_black_thick.png" alt="arrow"
+          class="heading-arrow__text--arrow"></h1>
+    </a>
+    <div class="section__top section_small_padding">
+      <div class="heading-left">
+        <h1>little black book</h1>
+      </div>
+
+      <p class="section__top__para">
+        <span class="section__top__para--1">
+          <span class="drop_cap">W</span>e bring you authentic imagery that endures the test of time, because we believe
+          every moment in life should be secured, savoured and celebrated.<br /> Explore our work in some of the
+          world's most
+          esteemed international publications.
+        </span>
+      </p>
+    </div>
+
+    <div class="portfolio__content">
+      <div class="portfolio__content__img">
+        <img class="portfolio__content__img__img" src="./src/assets/images/portfolio_1.jpg" alt="portfolio"
+          id="portfolio-img">
+      </div>
+      <div class="portfolio__content__nav">
+        <a href="#" class="portfolio__content__nav__link">
+          <div class="portfolio__content__nav__link__content">
+            <img src="./src/assets/images/portfolio_1.jpg" alt="portfolio">
+            <div class="portfolio__content__nav__link__content__index">01</div>
+            <div class="portfolio__content__nav__link__content__text">
+              <h2>I&A, Villa Aurelia, Rome</h2>
+              <span>FEATURED ON VOGUE</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="portfolio__content__nav__link">
+          <div class="portfolio__content__nav__link__content">
+            <img src="./src/assets/images/portfolio_2.jpg" alt="portfolio">
+            <div class="portfolio__content__nav__link__content__index">02</div>
+            <div class="portfolio__content__nav__link__content__text">
+              <h2>K&A, Castello Ruspoli</h2>
+              <span>FEATURED ON VOGUE</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="portfolio__content__nav__link">
+          <div class="portfolio__content__nav__link__content">
+            <img src="./src/assets/images/portfolio_6.jpg" alt="portfolio">
+            <div class="portfolio__content__nav__link__content__index">03</div>
+            <div class="portfolio__content__nav__link__content__text">
+              <h2>F&F, Villa Aurelia, Rome</h2>
+              <span>FEATURED ON HArper's BAAZAR</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="portfolio__content__nav__link">
+          <div class="portfolio__content__nav__link__content">
+            <img src="./src/assets/images/portfolio_4.jpg" alt="portfolio">
+            <div class="portfolio__content__nav__link__content__index">04</div>
+            <div class="portfolio__content__nav__link__content__text">
+              <h2>T&P, CASTELLO RUSPOLI</h2>
+              <span>FEATURED ON VOGUE</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="portfolio__content__nav__link">
+          <div class="portfolio__content__nav__link__content">
+            <img src="./src/assets/images/portfolio_5.jpg" alt="portfolio">
+            <div class="portfolio__content__nav__link__content__index">05</div>
+            <div class="portfolio__content__nav__link__content__text">
+              <h2>E&C, Villa Aurelia, Rome</h2>
+              <span>FEATURED ON ELLE</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- passport section -->
+  <section class="section passport">
+    <div class="section__top section_small_padding">
+      <div class="heading-left">
+        <h1 class="white_space_fix">Passport <br />to photography</h1>
+      </div>
+    </div>
+
+    <div class="passport__content">
+      <div class="passport__content__month">
+        <h2 class="passport__content__month__heading">Jun</h2>
+        <div class="passport__content__month__img">
+          <img src="./src/assets/images/passport_1.jpg" alt="passport 1" class="passport__content__month__img--img">
+        </div>
+        <div class="passport__content__month__subheadings">
+          <h3 class="passport__content__month__subheadings--1">Rome</h3>
+          <h3 class="passport__content__month__subheadings--2">Tuscany</h3>
+          <h3 class="passport__content__month__subheadings--3">Como Lake</h3>
+          <h3 class="passport__content__month__subheadings--4">Sicily</h3>
+        </div>
+      </div>
+      <div class="passport__content__month">
+        <h2 class="passport__content__month__heading">Jul</h2>
+        <div class="passport__content__month__img">
+          <img src="./src/assets/images/passport_2.jpg" alt="passport 2" class="passport__content__month__img--img">
+        </div>
+        <div class="passport__content__month__subheadings">
+          <h3 class="passport__content__month__subheadings--1">Rome</h3>
+          <h3 class="passport__content__month__subheadings--2">Tuscany</h3>
+          <h3 class="passport__content__month__subheadings--3">Amalfi Coast</h3>
+          <h3 class="passport__content__month__subheadings--4">Como Lake</h3>
+        </div>
+      </div>
+      <div class="passport__content__month">
+        <h2 class="passport__content__month__heading">Aug</h2>
+        <div class="passport__content__month__img">
+          <img src="./src/assets/images/passport_3.jpg" alt="passport 3" class="passport__content__month__img--img">
+        </div>
+        <div class="passport__content__month__subheadings">
+          <h3 class="passport__content__month__subheadings--1">Rome</h3>
+          <h3 class="passport__content__month__subheadings--2">Tuscany</h3>
+          <h3 class="passport__content__month__subheadings--3">Amalfi Coast</h3>
+          <h3 class="passport__content__month__subheadings--4">Portofino</h3>
+        </div>
+      </div>
+      <div class="passport__content__month">
+        <h2 class="passport__content__month__heading">Sep</h2>
+        <div class="passport__content__month__img">
+          <img src="./src/assets/images/passport_4.jpg" alt="passport 4" class="passport__content__month__img--img">
+        </div>
+        <div class="passport__content__month__subheadings">
+          <h3 class="passport__content__month__subheadings--1">Tuscany</h3>
+          <h3 class="passport__content__month__subheadings--2">Amalfi Coast</h3>
+          <h3 class="passport__content__month__subheadings--3">Como Lake</h3>
+          <h3 class="passport__content__month__subheadings--4">Venice</h3>
+        </div>
+      </div>
+      <div class="passport__content__month">
+        <h2 class="passport__content__month__heading">Oct</h2>
+        <div class="passport__content__month__img">
+          <img src="./src/assets/images/passport_5.jpg" alt="passport 5" class="passport__content__month__img--img">
+        </div>
+        <div class="passport__content__month__subheadings">
+          <h3 class="passport__content__month__subheadings--1">Como Lake</h3>
+          <h3 class="passport__content__month__subheadings--2">Amalfi Coast</h3>
+          <h3 class="passport__content__month__subheadings--3">Garda Lake</h3>
+          <h3 class="passport__content__month__subheadings--4">Rome</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- investment section -->
+  <div class="invest">
+    <h1 class="heading-large">INVEST in the indelible</h1>
+    <form action="POST" class="invest__form">
+      <p class="invest__form__header">Dear DAniele & Marilia</p>
+      <div class="invest__form__body">
+        <label for="name">I am</label>
+        <input type="text" class="invest__form__body__input" name="name" placeholder="Your Name">
+        <label for="insta">my instagram account is</label>
+        <input type="text" class="invest__form__body__input" name="insta" placeholder="Your Instagram">
+        <label for="wedding_date">and I'm planning my wedding on</label>
+        <input type="text" class="invest__form__body__input" name="wedding_date" placeholder="Your Wedding Date">
+        <label for="location">at</label>
+        <input type="text" class="invest__form__body__input" name="location" placeholder="Your Venue">
+        <label for="guests">for</label>
+        <input type="text" class="invest__form__body__input" name="guests" placeholder="Guest Number">
+        <label for="planner">people my wedding planner is</label>
+        <input type="text" class="invest__form__body__input" name="planner" placeholder="Wedding Planner">
+        <label for="founded">And I found you on</label>
+        <input type="text" class="invest__form__body__input" name="founded" placeholder="Where you found us">
+        <label for="email">you can reach me out at</label>
+        <input type="email" class="invest__form__body__input" name="email" placeholder="Your Email">
+      </div>
+      <p class="invest__form__footer">Thank You.</p>
+      <div class="invest__form__send">
+        <button class="circle-btn">
+          <div class="circle-btn__outline"></div>
+          <span class="circle-btn__text">Send<img src="./src/assets/images/arrow_black_thick.png" alt="arrow"></span>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- instagram section -->
+  <section class="section instagram">
+    <div class="section__top">
+      <div class="heading-left">
+        <h1 class="white_space_fix">Follow us on <br /> instagram</h1>
+      </div>
+    </div>
+
+    <div class="instagram__content">
+      <div class="instagram__content__wrapper">
+        <div class="instagram__content__wrapper__buttons">
+          <button class="instagram__content__wrapper__buttons--left">
+            <img src="./src/assets/images/slide-arrow-left.svg" alt="left arrow">
+          </button>
+          <button class="instagram__content__wrapper__buttons--right">
+            <img src="./src/assets/images/slide-arrow-right.svg" alt="right arrow">
+          </button>
+        </div>
+        <div class="instagram__content__wrapper__slider">
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_1.jpeg" alt="instagram 1">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_2.jpeg" alt="instagram 2">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_3.jpeg" alt="instagram 3">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_4.jpeg" alt="instagram 4">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_5.jpeg" alt="instagram 5">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_6.jpeg" alt="instagram 6">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_7.jpeg" alt="instagram 7">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_8.jpeg" alt="instagram 8">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_9.jpeg" alt="instagram 9">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_10.jpeg" alt="instagram 10">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_11.jpeg" alt="instagram 11">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_12.jpeg" alt="instagram 12">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_13.jpeg" alt="instagram 13">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_14.jpeg" alt="instagram 14">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_15.jpeg" alt="instagram 15">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_16.jpeg" alt="instagram 16">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_17.jpeg" alt="instagram 17">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/stories_1.jpg" alt="instagram 18">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_19.jpeg" alt="instagram 19">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_20.jpeg" alt="instagram 20">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/portfolio_3.jpg" alt="instagram 21">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_22.jpeg" alt="instagram 22">
+            </div>
+          </a>
+          <a href="#" class="instagram__content__wrapper__slider__link">
+            <div class="instagram__content__wrapper__slider__link__img">
+              <img src="./src/assets/images/insta_23.webp" alt="instagram 23">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__content__logo">
+        <img src="./src/assets/images/footer_logo.svg" alt="logo">
+      </div>
+      <div class="footer__content__nav">
+        <div class="footer__content__nav__menu">
+          <h1 class="footer__content__nav__menu__heading">Menu</h1>
+          <a href="./index.html" class="footer__content__nav__menu__link">Home</a>
+          <a href="./portfolio.html" class="footer__content__nav__menu__link">Portfolio</a>
+          <a href="./stories.html" class="footer__content__nav__menu__link">Stories</a>
+          <a href="./photobook.html" class="footer__content__nav__menu__link">Photobook</a>
+          <a href="./about.html" class="footer__content__nav__menu__link">About Us</a>
+        </div>
+        <div class="footer__content__nav__menu">
+          <h1 class="footer__content__nav__menu__heading">Info</h1>
+          <a href="./contact.html" class="footer__content__nav__menu__link">Contact us</a>
+          <a href="./faqs.html" class="footer__content__nav__menu__link">FAQs</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer__rights">
+      <span class="footer__rights__owner">DANIELE&MARILIA© <span id="year"></span></span>
+      <a href="https://www.linkedin.com/in/umair-sajjad/" class="footer__rights__developer">© Made by XELVIAN</a>
+    </div>
+  </footer>
+
+  <!-- investment section -->
+  <div class="invest">
+    <h1 class="heading-large">INVEST in the indelible</h1>
+    <form action="POST" class="invest__form">
+      <p class="invest__form__header">Dear DAniele & Marilia</p>
+      <div class="invest__form__body">
+        <label for="name">I am</label>
+        <input type="text" class="invest__form__body__input" name="name" placeholder="Your Name">
+        <label for="insta">my instagram account is</label>
+        <input type="text" class="invest__form__body__input" name="insta" placeholder="Your Instagram">
+        <label for="wedding_date">and I'm planning my wedding on</label>
+        <input type="text" class="invest__form__body__input" name="wedding_date" placeholder="Your Wedding Date">
+        <label for="location">at</label>
+        <input type="text" class="invest__form__body__input" name="location" placeholder="Your Venue">
+        <label for="guests">for</label>
+        <input type="text" class="invest__form__body__input" name="guests" placeholder="Guest Number">
+        <label for="planner">people my wedding planner is</label>
+        <input type="text" class="invest__form__body__input" name="planner" placeholder="Wedding Planner">
+        <label for="founded">And I found you on</label>
+        <input type="text" class="invest__form__body__input" name="founded" placeholder="Where you found us">
+        <label for="email">you can reach me out at</label>
+        <input type="email" class="invest__form__body__input" name="email" placeholder="Your Email">
+      </div>
+      <p class="invest__form__footer">Thank You.</p>
+      <div class="invest__form__send">
+        <button class="circle-btn">
+          <div class="circle-btn__outline"></div>
+          <span class="circle-btn__text">Send<img src="./src/assets/images/arrow_black_thick.png" alt="arrow"></span>
+        </button>
+      </div>
+    </form>
+  </div>
 
   <!-- book now CTA -->
   <a href="./contact.html" class="book-CTA">
@@ -302,18 +721,23 @@
 
   <!-- cookie -->
   <!-- <div class="cookie">
-    <p class="cookie__para">By using this website, you agree to the storing of cookies on your device to enhance site
-      navigation, analyze site usage, and assist in our marketing efforts.</p>
+      <p class="cookie__para">By using this website, you agree to the storing of cookies on your device to enhance site
+        navigation, analyze site usage, and assist in our marketing efforts.</p>
 
-    <button class="cookie__btn">Reject</button>
-    <button class="cookie__btn">Accept</button>
-  </div> -->
+      <button class="cookie__btn">Reject</button>
+      <button class="cookie__btn">Accept</button>
+    </div> -->
+
+  <script type="module" src="./src/gsap/loader.js"></script>
   <script type="module" src="/src/main.js"></script>
   <script type="module" src="./src/gsap/featuredSection.js"></script>
   <script type="module" src="./src/gsap/videoSection.js"></script>
   <script type="module" src="./src/gsap/editorialSection.js"></script>
   <script type="module" src="./src/gsap/discoverSecton.js"></script>
   <script type="module" src="./src/gsap/storiesSection.js"></script>
+  <script type="module" src="./src/gsap/portfolioSection.js"></script>
+  <script type="module" src="./src/gsap/passportSection.js"></script>
+  <script type="module" src="./src/gsap/instagramSection.js"></script>
 </body>
 
 </html>

@@ -26,3 +26,6 @@ gsap.ticker.add((time) => {
 });
 
 gsap.ticker.lagSmoothing(0);
+
+let year = String(new Date().getFullYear());
+document.getElementById("year").innerText = year;

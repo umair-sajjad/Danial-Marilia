@@ -1,0 +1,60 @@
+@use "../abstracts/mixins" as *;
+
+.instagram {
+  padding: 16px;
+
+  &__content {
+    overflow: hidden;
+    width: 100%;
+
+    &__wrapper {
+      @include responsive(screen-mobile-lg) {
+        padding-bottom: 16px;
+      }
+
+      &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 6.4rem;
+        padding: 0 6.4rem 16px 0;
+      }
+
+      &__slider {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: nowrap;
+        flex: 1;
+        width: max-content;
+        will-change: transform;
+
+        &__link {
+          display: block;
+          flex-shrink: 0;
+
+          &:hover {
+            .instagram__content__wrapper__slider__link__img img {
+              transform: scale(1.1);
+            }
+          }
+
+          &__img {
+            overflow: hidden;
+
+            img {
+              width: 20vw;
+              aspect-ratio: 2/3;
+              object-fit: cover;
+              transition: all 0.5s ease;
+
+              @include responsive(screen-mobile-lg) {
+                width: 65vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

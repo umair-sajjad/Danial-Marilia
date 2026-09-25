@@ -2,36 +2,6 @@
 
 .section {
   .section__top {
-    padding: 0 16px 19.2rem 16px;
-
-    @include responsive(screen-mobile-lg) {
-      padding-bottom: 10.667rem;
-    }
-
-    &__heading {
-      width: 100%;
-
-      &__text {
-        text-transform: uppercase;
-        width: 40%;
-        font-size: 4vw;
-
-        @include responsive(screen-lg) {
-          font-size: 5rem;
-        }
-
-        @include responsive(screen-md) {
-          font-size: 5.625rem;
-          width: 50%;
-        }
-
-        @include responsive(screen-mobile-lg) {
-          font-size: 4.333rem;
-          width: 70%;
-        }
-      }
-    }
-
     &__para {
       width: 28%;
       font-size: 2.6rem;
